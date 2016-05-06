@@ -1,4 +1,4 @@
-package com.vasu.boilerplate.springboot.rest;
+package com.vasu.manzana;
 
 public class Response {
 	private String errorcode;
