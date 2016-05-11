@@ -1,0 +1,50 @@
+<div class="row" ng-init="init()">
+    <div class="col-lg-12">
+        <h2 class="page-header">Invoice</h2>
+    </div>  
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="row">
+                    <div class="col-lg-2"/>
+                    <div class="col-lg-8" >
+                        <div class="col-lg-3 text-center">
+                            <button class="btn btn-lg btn-circle" ng-class="{'btn-primary':!isAddForm(),'btn-danger':isAddForm()}" ng-click="showAddForm()"><i class="fa fa-plus"></i></button>
+                        </div>
+                        <div class="col-lg-3 text-center">
+                            <button class="btn btn-circle btn-lg " ng-class="{'btn-primary':!isEditForm(),'btn-danger':isEditForm()}" ><i class="fa fa-edit"></i></button>
+                        </div>
+                        <div class="col-lg-3 text-center">
+                            <button class="btn btn-circle btn-lg " ng-class="{'btn-primary':!isSearchForm(),'btn-danger':isSearchForm()}" ng-click="showSearchForm()"><i class="fa fa-search"></i></button>
+                        </div>
+                        <div class="col-lg-3 text-center">
+                            <button class="btn btn-circle btn-lg " ng-class="{'btn-primary':!isReportForm(),'btn-danger':isReportForm()}" ng-click="showReportForm()"><i class="fa fa-bar-chart"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-2"/>
+                </div>
+            </div>
+            <div class="panel-body">
+                    <div class="row" ng-show="isAddForm()">
+                        <span ng-include="'views/invoice-add.html'"></span>
+                    </div>
+                    <div class="row" ng-show="isSearchForm()">
+                        <span ng-include="'views/invoice-search.html'"></span>
+                    </div>
+                    <div class="row" ng-show="isEditForm()">
+                        <span ng-include="'views/invoice-edit.html'"></span>
+                    </div>
+                    <div class="row" ng-show="isReportForm()">
+                        <span ng-include="'views/invoice-report.html'"></span>
+                    </div>
+                </form>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+</div>

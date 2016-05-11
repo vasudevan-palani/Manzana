@@ -19,12 +19,22 @@ public class Application {
     }
 
     @Bean
-    
     @ConfigurationProperties(prefix="spring.CLFYSCI")
     public DataSource clfysciDataSource() {
         return DataSourceBuilder.create().build();
     }
+    
+    @Bean
+    @ConfigurationProperties(prefix="spring.CLFYSIT1")
+    public DataSource clfysit1DataSource() {
+        return DataSourceBuilder.create().build();
+    }
 
+    @Bean(name="clfysit1")
+    public JdbcTemplate clfysit1JdbcTemplate() {
+        return new JdbcTemplate(clfysit1DataSource());
+    }
+    
     @Bean(name="clfysci")
     public JdbcTemplate clfysciJdbcTemplate() {
         return new JdbcTemplate(clfysciDataSource());

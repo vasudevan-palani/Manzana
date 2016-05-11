@@ -1,0 +1,31 @@
+  <div class="row" ng-controller="HeaderCtrl">
+      <div class="col-lg-2 relative">
+        <div class="logo-bg">
+          <img src="images/minion.png" height="100px" style="position:absolute;left:50px;top:10px;"/>
+        </div>
+      </div>
+      <div class="col-lg-2 header-vasu">
+        <button class="btn btn-block btn-lg btn-primary" ui-sref="dashboard.invoice" ng-class="{'btn-header-selected':isState('dashboard.invoice')}">
+          Invoices
+        </button>
+      </div>
+      <div class="col-lg-2 header-vasu">
+        <button class="btn btn-block btn-lg btn-primary" ui-sref="dashboard.purchaseorder" ng-class="{'btn-header-selected':isState('dashboard.purchaseorder')}">
+          PurchaseOrders
+        </button>
+      </div>
+      <div class="col-lg-2 header-vasu">
+        <button class="btn btn-block btn-lg btn-primary" ui-sref="dashboard.effort" ng-class="{'btn-header-selected':isState('dashboard.effort')}">
+          Efforts
+        </button>
+      </div>
+      <div class="col-lg-2 header-vasu ">
+        <div class="empty">
+        </div>
+      </div>
+      <div class="col-lg-2 header-logout">
+        <button class="btn btn-block btn-lg btn-primary logout" ng-click="logout()">
+          Logout ( {{$root.empId}} )
+        </button>
+      </div>
+  </div>

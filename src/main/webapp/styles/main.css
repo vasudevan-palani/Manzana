@@ -1,0 +1,305 @@
+/* Space out content a bit */
+body {
+    padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.nav>li.active>a {
+text-decoration: none;
+background-color: #eee;
+}
+
+div[minion-date-picker] > input[readOnly]  {
+  background-color: #FFFFFF
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.project-header{
+  text-align: center;
+  background-color: #5599FF;
+  color: #FFFFFF;
+}
+
+.text-center{
+  text-align: center;
+}
+
+/* CSS used here will be applied after bootstrap.css */
+.modal-header-success {
+    color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #5cb85c;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+.modal-header-warning {
+  color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #f0ad4e;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+.modal-header-danger {
+  color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #d9534f;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+.modal-header-info {
+    color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #5bc0de;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+.modal-header-primary {
+  color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #428bca;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+     border-top-left-radius: 5px;
+     border-top-right-radius: 5px;
+}
+
+.has-watermark {
+  position: relative;
+}
+
+.watermark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:#CCEECC;
+  width:92%;
+  height:100%;
+  opacity:0.3;
+}
+
+.watermark-enabled{
+  display:block;
+}
+
+.watermark-disabled{
+  display:none;
+}
+
+.relative {
+  position: relative;
+}
+
+.logo-bg {
+  position: absolute;
+  border-bottom-right-radius: 100%;
+  width: 100%;
+  height:140px;
+  border-color: #337ab7;
+  background-color: #337ab7;
+  border-style: solid;
+}
+
+.header-vasu {
+  background-color: #337ab7;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #337ab7;
+}
+
+.header-logout {
+  background-color: #337ab7;
+  padding-left: 0px;
+  padding-right: 0px;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #337ab7;
+}
+
+.header-logout button {
+  border-style: none;
+  height: 45px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+}
+
+.header-vasu button {
+  border-style: none;
+  height: 45px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+  color:#CCC;
+}
+
+
+.header-vasu .empty {
+  border-style: none;
+  height: 45px;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+}
+
+.footer{
+    background-color: #337ab7;
+    height: 70px;
+    color: #FFFFFF;
+    font-size: 15px;
+    padding: 0;
+    width: 100%;
+    padding-top: 20px;
+}
+
+
+.logout{
+  font-size:14px;
+}
+
+.border-bottom{
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: #CCC;
+}
+
+.header-vasu button.btn-header-selected{
+  border-bottom-style: solid;
+  border-width: 3px;
+  border-color: #FFF;
+  border-radius: 0px;
+  color: #FFF;
+}
+
+.header-vasu button:hover{
+  background-color: #337ab7;
+  border-bottom-style: solid;
+  border-width: 3px;
+  border-color: #FFF;
+  border-radius: 0px;
+}
+
+.header-vasu button:visited{
+  background-color: #337ab7;
+  border-bottom-style: solid;
+  border-width: 3px;
+  border-color: #FFF;
+  border-radius: 0px;
+}
+.btn-eclipse{
+  border-radius: 20px;
+}
+
+.search-text{
+  margin-top: 25px;
+}
+
+.top-margin{
+  margin-top: 10px; 
+}
+
+.table-small{
+  font-size: 10px;
+}

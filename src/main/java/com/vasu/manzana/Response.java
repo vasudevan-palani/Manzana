@@ -53,5 +53,7 @@ public class Response {
 		this.object = object;
 	}
 	
-	
+	public Response() {
+		setErrorcode("0");
+	}
 }

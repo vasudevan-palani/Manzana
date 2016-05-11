@@ -1,1 +1,6 @@
-com\vasu\boilerplate\springboot\rest\HelloController.class
+com\vasu\manzana\Response.class
+com\vasu\manzana\HelloController.class
+com\vasu\manzana\HelloController$1.class
+com\vasu\manzana\Request.class
+com\vasu\manzana\Application.class
+com\vasu\manzana\HelloController$HashMapRowMapper.class
